@@ -1,0 +1,14 @@
+Prompt,Test Case,GPT-4o Result,Claude 3.5 Result,Gemini 1.5 Result,Notes
+1 - Chat Parser,Standard chat log,Schema compliant,Schema compliant,Schema compliant,All models produced valid JSON
+1 - Chat Parser,Empty log input,Returned null values correctly,Returned null values correctly,Returned null values correctly,No hallucination on missing data
+1 - Chat Parser,Log with special characters,Escaped correctly,Escaped correctly,Failed on emoji parsing,Gemini limitation noted
+2 - Financial KPI,Single-period report,All KPIs extracted,All KPIs extracted,Missed churn rate,Accuracy varies on implied metrics
+2 - Financial KPI,Multi-currency report,Converted correctly,Converted correctly,Used wrong exchange rate,Currency conversion needs explicit rates
+3 - Post-Mortem,Standard incident,Narrative coherent,Narrative coherent,Narrative too verbose,Claude produced most concise output
+4 - Ad Copy,E-commerce brief,Strong CTA variants,Strong headline,Bland body copy,GPT-4o best for creative copy tasks
+5 - SOC Analysis,Brute force log,Correctly classified HIGH,Correctly classified HIGH,Classified MEDIUM (undercall),Gemini less conservative on risk
+6 - Support Routing,Angry customer message,Correctly routed + sentiment,Correctly routed + sentiment,Correct but missed urgency,GPT-4o best for emotional nuance
+7 - Error Debugging,Null pointer exception,Root cause identified,Root cause identified,Root cause identified,All models performed similarly
+8 - ML Discrepancy,Data drift scenario,Full 7-step complete,Full 7-step complete,Skipped step 6,Gemini occasionally skips framework steps
+9 - Legal Contract,Standard employment contract,All clauses extracted,Missed 1 ambiguous clause,All clauses extracted,Claude most conservative (good for legal)
+10 - Build vs Buy,SaaS decision scenario,Reasoning balanced,Reasoning balanced,Biased toward buy,Gemini shows slight vendor bias
