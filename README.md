@@ -58,7 +58,7 @@ Results documented in `/evaluations/prompt-test-results.csv`
 
 ## 🚀 Live Demo
 
-Try the prompts interactively: **[Streamlit Demo Link — Add your deployed app link here]**
+Try the prompts interactively: **[ https://prompt-engineering-pipeline-ifd9pzkbjxpytqt2hgbdm3.streamlit.app/ ]**
 
 ---
 
